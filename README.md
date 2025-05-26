@@ -23,7 +23,7 @@ Emerging IT and analytics professional with a strong foundation in software deve
 **Advanced Diploma in Computer Programming and Analysis**  
 *Durham College, Oshawa ON*  
 *January 2021 – May 2023*  
-- Maintaining a 3.2 GPA in all courses.
+
 
 ---
 
