@@ -84,8 +84,7 @@ Built the front-end interface and navigation structure to support user trip plan
 Built with React.js to connect employers with job seekers, featuring role-based access, job filtering, and a user-friendly interface for posting and applying to jobs.
 
 ### Instant+ – Financial App (Flutter, Dart)  
-Designed UML diagrams and contributed to savings logic and visual progress tracking. Developed features to automate recurring deposits into virtual "LockBoxes," supporting user goals with time-based lock durations.
-
+Contributed to the development of Instant+, a Flutter-based financial app, by setting up Firebase authentication, implementing Google sign-in, password reset, and user profile storage features. Also developed user interface components to support smooth navigation and enhance user experience.
 ---
 
 ## Additional Skills
