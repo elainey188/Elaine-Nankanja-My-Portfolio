@@ -85,6 +85,8 @@ Built with React.js to connect employers with job seekers, featuring role-based 
 
 ### Instant+ – Financial App (Flutter, Dart)  
 Contributed to the development of Instant+, a Flutter-based financial app, by setting up Firebase authentication, implementing Google sign-in, password reset, and user profile storage features. Also developed user interface components to support smooth navigation and enhance user experience.
+
+
 ---
 
 ## Additional Skills
@@ -93,4 +95,6 @@ Contributed to the development of Instant+, a Flutter-based financial app, by se
 - Able to work efficiently both in a team as well as independently  
 - Problem-solving  
 - Excellent attention to detail  
-- Adaptability and eagerness to learn  
+- Adaptability and eagerness to learn
+
+
