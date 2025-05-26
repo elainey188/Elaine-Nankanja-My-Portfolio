@@ -1,0 +1,32 @@
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .job-listing {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .job-listing h2 {
+    color: #3d3d3d;
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .job-info {
+    color: #6b6b6b;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .job-description {
+    color: #3d3d3d;
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
+  

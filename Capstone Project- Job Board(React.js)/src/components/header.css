@@ -1,0 +1,73 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+/* Logo */
+.logo {
+  height: 80px;
+}
+
+/* Header title */
+.header h1 {
+  font-size: 1.2rem; 
+  margin: 0;
+}
+
+/* Header links */
+.header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  margin-right: 1rem;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+.header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem; 
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.header ul li a:hover {
+  background-color: white;
+  color: #222;
+  border-radius: 0.3rem;
+}
+
+.header ul li a:active {
+  transform: translateY(2px);
+  background-color: white ;
+  color: #222;
+  border-radius: 0.3rem;
+}
+
+/* Header link */
+.header-link {
+  color: white; /* Set the default text color */
+  background-color: transparent; /* Set the default background color */
+  text-decoration: none; /* Remove the underline */
+  padding: 10px; /* Add some padding for better visibility */
+  border-radius: 5px; /* Add rounded corners for a more modern look */
+}
+
+.header-link:hover {
+  color: black; /* Change the text color on hover */
+  background-color: white; /* Change the background color on hover */
+}
+

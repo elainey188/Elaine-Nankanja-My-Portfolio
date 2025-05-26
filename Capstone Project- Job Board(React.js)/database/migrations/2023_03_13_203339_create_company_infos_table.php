@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCompanyInfosTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('company_info', function (Blueprint $table) {
+            $table->increments('PK_CompanyID');
+            $table->integer('FK_EmployerID')->unsigned();
+            $table->foreign('FK_EmployerID')->references('PK_EmployerID')->on('employers');
+            $table->string('Company Information');
+            $table->timestamps();
+        });
+    }
+    
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('company_infos');
+    }
+}
