@@ -70,7 +70,7 @@ Emerging IT and analytics professional with a strong foundation in software deve
 ---
 
 ## Projects
-You can view all my projects on [GitHub](https://github.com/elainey188).
+You can view all my projects on [GitHub](https://github.com/elainey188/Elaine-Nankanja-My-Portfolio).
 
 ### Database Management System (Python, SQL)  
 Designed and implemented a database-driven system to manage a fictional soccer association’s teams and players. Created CRUD operations, ensured data integrity, and wrote SQL queries for dynamic data retrieval and reporting.
