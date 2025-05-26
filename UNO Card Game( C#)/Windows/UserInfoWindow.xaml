@@ -1,0 +1,54 @@
+﻿<Window x:Class="UNO_Game.UserInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UNO_Game"
+        mc:Ignorable="d"
+        Title="User Statistics" Height="500" Width="400" WindowStartupLocation="CenterOwner" Background="#FFEBEBEB" >
+    <Window.Resources>
+
+
+        <LinearGradientBrush x:Key="GridBrush"
+                                 StartPoint="1,0" EndPoint="1,1">
+            <GradientStop Color="#2C4C3B" Offset="0.4"/>
+            <GradientStop Color="#16261D" Offset="1.0"/>
+            <GradientStop Color="#2C4C3B" Offset="0.0"/>
+
+
+
+        </LinearGradientBrush>
+        <Style TargetType="{x:Type Grid }">
+            <Setter Property="Background" Value="{StaticResource GridBrush}" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel >
+            <StackPanel Orientation="Horizontal">
+                <Image x:Name="ProfilePic" Width="100" Height="100" Margin="10,10"  Stretch="UniformToFill"/>
+                <TextBlock x:Name="UserNameLabel" Width="250" Margin="15,0" Foreground="White" VerticalAlignment="Center" FontFamily="Baskerville Old Face" FontSize="40" TextAlignment="Center" TextWrapping="Wrap"/>
+            </StackPanel>
+            <Button x:Name="ChangePicBtn" FontFamily="Baskerville Old Face" Click="ChangePicBtn_OnClick" HorizontalAlignment="Left" Width="100" Content="Change Picture" FontSize="13" Height="20" Padding="0" Margin="10,0,0,0"/>
+            <Button x:Name="ChangeNameBtn" FontFamily="Baskerville Old Face" Click="ChangeNameBtn_OnClick" HorizontalAlignment="Left" Width="100" Content="Change Name" FontSize="13" Height="20" Padding="0" Margin="10,5,0,5"/>
+            <Button x:Name="ResetStatsBtn" FontFamily="Baskerville Old Face" Click="ResetStatsBtn_OnClick" HorizontalAlignment="Right" Width="75" Content="Reset Stats" FontSize="13" Height="20" Margin="0,0,20,-25"/>
+            <Border BorderBrush="#B3FFFFFF" BorderThickness="1" Margin="20,30">
+                <Grid Height="250" Background="#99FFFFFF">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <StackPanel Orientation="Vertical" Margin="30,15">
+                                <Label FontSize="20" FontFamily="Baskerville Old Face" Foreground="Black" Content="Games Played:" Margin="0,15"/>
+                                <Label FontSize="20" FontFamily="Baskerville Old Face" Foreground="Black" Content="Games Won:" Margin="0,15"/>
+                                <Label FontSize="20" FontFamily="Baskerville Old Face" Foreground="Black" Content="Games Lost:" Margin="0,15"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="50,15">
+                                <Label FontSize="22" Foreground="Black" FontFamily="Baskerville Old Face" x:Name="LblGamesPlayed" Margin="0,15"/>
+                            <Label FontSize="22" Foreground="Black" FontFamily="Baskerville Old Face" x:Name="LblGamesWon" Margin="0,15"/>
+                            <Label FontSize="22" Foreground="Black" FontFamily="Baskerville Old Face" x:Name="LblGamesLost" Margin="0,15"/>
+                            </StackPanel>
+                        </StackPanel>
+                </Grid>
+                </Border>
+
+        </StackPanel>
+    </Grid>
+    
+</Window>

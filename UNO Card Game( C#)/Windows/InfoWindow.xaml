@@ -1,0 +1,105 @@
+﻿<Window x:Class="UNO_Game.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UNO_Game"
+        mc:Ignorable="d"
+        Title="Info/Rules"  Height="350" Width="650" WindowStartupLocation="CenterOwner" Background="Transparent">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Baskersville"/>
+            <Setter Property="FontWeight" Value="Light"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Baskersville"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Border Background="#FF506050" CornerRadius="10,0,0,10">
+
+            </Border>
+            <StackPanel Grid.Column="0"  Margin="0,0,0.333,-0.333">
+                <Grid>
+                    <Border Width="405" Height="75" Margin="0,10" Background="#FF999999" BorderBrush="LightGray" BorderThickness="4" CornerRadius="10">
+                        <Border.Effect>
+                            <BlurEffect Radius="4"></BlurEffect>
+                        </Border.Effect>
+                    </Border>
+                    <TextBlock FontWeight="DemiBold" FontSize="23" Width="400" Text="Empty your hand and yell &quot;UNO!&quot;     to win"/>
+                </Grid>
+                <TextBlock FontFamily="Baskerville"  TextAlignment="Center" FontSize="19">
+                    This version of UNO does NOT count cards. 
+                    <LineBreak/>
+                    The first person to empty their hand is the winner.
+                </TextBlock>
+                <TextBlock LineHeight="20" Width="400" TextAlignment="Center" FontWeight="Normal" Margin="0,15,0,0">
+                    - You must match the current top card color or number/type.
+                    <LineBreak/>- Wild Cards can be played at any time and can change the current color.
+                    <LineBreak/>- When you play your second last card you must press the UNO button or pick up 4 cards.
+                </TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,10">
+                    <Label FontSize="14" FontWeight="Medium" VerticalContentAlignment="Bottom" Content="For more information and in depth rules please go"/>
+                    <Label Foreground="pink" FontSize="16" Margin="-5,0">
+                        <Hyperlink FontFamily="Calibri" x:Name="RulesLink" NavigateUri="https://www.unorules.org/#uno-rules">
+                            here
+                        </Hyperlink>
+                    </Label>
+                </StackPanel>
+            </StackPanel>
+            <Label Content="This game is a fan game and in no way affiliated with Hasbro Games." HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Border Background="White" CornerRadius="0,10,10,0">
+                
+            </Border>
+            <Border BorderBrush="Gray" BorderThickness="3" CornerRadius="10">
+                <Border.Effect>
+                    <BlurEffect Radius="2"/>
+                </Border.Effect>
+            </Border>
+            <Border CornerRadius="10" Background="LightGray">
+                <Grid>
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Acknowledgements" FontSize="23" FontWeight="DemiBold" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                        <Rectangle Width="210" Height="1" Fill="DarkGray"/>
+
+                        <StackPanel Orientation="Vertical" Margin="0,10">
+                            <TextBlock  TextWrapping="Wrap" FontSize="16">
+                                Project coded by: 
+                                <LineBreak/> Alexus Girotto, Benjamin Cecutti, Elaine Nankanja
+                            </TextBlock>
+                            <Rectangle Width="180" Margin="0,10" Height="1" Fill="DarkGray"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <TextBlock Text="Logo, Card Assets and Game Background by:" Width="150" FontSize="16" TextWrapping="Wrap"/>
+                                <Label Foreground="#FF2C90E0" FontSize="16" VerticalContentAlignment="Bottom">
+                                    <Hyperlink x:Name="AssetLink" NavigateUri="https://alexder.itch.io/uno-card-game-asset-pack">
+                                        AlexDer
+                                    </Hyperlink>
+                                </Label>
+                            </StackPanel>
+                            <Rectangle Width="180" Margin="0,10" Height="1" Fill="DarkGray"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Label Content="Music by:" FontSize="16"/>
+                                <Label Foreground="#FF2C90E0" FontSize="16">
+                                    <Hyperlink FontFamily="Calibri" x:Name="MusicLink" NavigateUri="https://uppbeat.io/browse/artist/kevin-macleod">
+                                        Kevin MacLeod
+                                    </Hyperlink>
+                                </Label>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
